@@ -23,9 +23,30 @@ export default function Home() {
         <h1 className="main-title">hi! i'm nari alzence</h1>
         <p className="main-subtitle">developer & artist</p>
         <div className="button-group">
-          <button onClick={() => toggleWindow("about")} className="btn green">about</button>
-          <button onClick={() => toggleWindow("projects")} className="btn blue">projects</button>
-          <button onClick={() => toggleWindow("contact")} className="btn black">contact</button>
+          <motion.button
+            onClick={() => toggleWindow("about")}
+            className="btn green"
+            whileHover={{ scale: 1.1, boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.2)" }}
+            whileTap={{ scale: 0.95 }}
+          >
+            about
+          </motion.button>
+          <motion.button
+            onClick={() => toggleWindow("projects")}
+            className="btn blue"
+            whileHover={{ scale: 1.1, boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.2)" }}
+            whileTap={{ scale: 0.95 }}
+          >
+            projects
+          </motion.button>
+          <motion.button
+            onClick={() => toggleWindow("contact")}
+            className="btn black"
+            whileHover={{ scale: 1.1, boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.2)" }}
+            whileTap={{ scale: 0.95 }}
+          >
+            contact
+          </motion.button>
         </div>
       </motion.div >
 
