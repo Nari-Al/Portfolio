@@ -5,7 +5,7 @@ interface WindowProps {
     title: string;
     children: ReactNode;
     onClose: () => void;
-    constraintsRef: RefObject<HTMLDivElement>; // Add constraintsRef to props
+    constraintsRef: RefObject<HTMLDivElement | null>; // Allow constraintsRef to be null
 }
 
 const Window: React.FC<WindowProps> = ({ title, children, onClose, constraintsRef }) => {
