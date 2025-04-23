@@ -29,13 +29,19 @@ html {
 }
 
 .main-title {
-  font-size: 1.5rem;
+  font-size: 32px;
   font-weight: bold;
-  color: #ca8a04;
+  color: #000000;
+  margin-bottom: 0px;
+
+  b {
+    color: #ca8a04;
+  }
 }
 
 .main-subtitle {
-  font-size: 0.875rem;
+  font-size: 18px;
+  margin-top: 0px;
 }
 
 .button-group {
@@ -44,24 +50,26 @@ html {
 }
 
 .btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
-  color: white;
   border: none;
   cursor: pointer;
   font-weight: 500;
-}
+  background: none;
+  user-select: none;
 
-.btn.green {
-  background-color: #047857;
-}
+  font-size: 18px;
+  color: #2A4D46;
 
-.btn.blue {
-  background-color: #1e3a8a;
-}
-
-.btn.black {
-  background-color: #000;
+  img {
+    pointer-events: none;
+    height: 120px;
+    width: 120px;
+  }
 }
 
 
@@ -82,6 +90,8 @@ html {
   border: 2px solid #2A4D46;
   border-radius: 20px;
   width: 20rem;
+  min-width: 30vw;
+  min-height: 40vh;
   max-width: 90vw;
   z-index: 10;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
